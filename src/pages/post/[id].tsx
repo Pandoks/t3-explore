@@ -1,10 +1,6 @@
-import { createServerSideHelpers } from "@trpc/react-query/server";
 import type { GetStaticPropsContext, NextPage } from "next";
 import Head from "next/head";
-import { appRouter } from "~/server/api/root";
 import { api } from "~/utils/api";
-import { prisma } from "~/server/db";
-import superjson from "superjson";
 import { PageLayout } from "~/components/layout";
 import { PostView } from "~/components/postview";
 import { generateSSGHelper } from "~/server/helpers/ssgHelper";
